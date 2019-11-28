@@ -1,6 +1,6 @@
 aws_reigon      = "ap-south-1"
 key_name        = "new-key-pair"
-ami             = "ami-aff65ad2"
+ami             = "ami-0086e1fa1a40fe3d0"
 vpc_id          = "vpc-09646561"
 
 
