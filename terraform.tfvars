@@ -1,18 +1,18 @@
-aws_region      = "us-east-1"
-key_name        = "aniket2"
+aws_region      = "ap-south-1"
+key_name        = "new-key-pair"
 ami             = "ami-aff65ad2"
-vpc_id          = "vpc-f45d8f8e"
-access_key = "AKIAISL6WULTCKLYRSEA"
-secret_key = "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"
+vpc_id          = "vpc-09646561"
+access_key = "AKIAUWQS3XBQPD5T3Z4O"
+secret_key = "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"
 
-security_group_1 = "sg-0979687966e579fee"
-security_group_2 = "sg-0c80ce4a0f043ea1f"
+security_group_1 = "sg-0e18043027cf1e7cc"
+security_group_2 = "sg-0e18043027cf1e7cc"
 
-image_url = "269898812198.dkr.ecr.us-east-1.amazonaws.com/aniketapp:latest"
+image_url = "aniketchopade/location-service"
 asg_min   = 1
-asg_max   = 2
-asg_desired = 2
+asg_max   = 1
+asg_desired = 1
 instance_type = "t2.micro"
 
-subnet_2     = "subnet-5cd90c62"
-subnet_1     = "subnet-90e062cc"
+subnet_2     = "subnet-c49eb1ac"
+subnet_1     = "subnet-757ee239"
