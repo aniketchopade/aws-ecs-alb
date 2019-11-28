@@ -1,4 +1,4 @@
-aws_region      = "ap-south-1"
+aws_reigon      = "ap-south-1"
 key_name        = "new-key-pair"
 ami             = "ami-aff65ad2"
 vpc_id          = "vpc-09646561"
