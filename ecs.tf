@@ -7,7 +7,7 @@ resource "aws_ecs_cluster" "main" {
 data "template_file" "task_definition" {
   template = "${file("${path.module}/task-definition.json")}"
 
-  vars = {
+  vars ={
     image_url        = "${var.image_url}"
     container_name   = "sample-dc"
     log_group_region = "${var.aws_region}"
@@ -30,7 +30,7 @@ resource "aws_ecs_service" "sample_service" {
   load_balancer {
     target_group_arn = "${aws_alb_target_group.sample_target_group.id}"
     container_name   = "sample-dc"
-    container_port   = "3333"
+    container_port   = "8443"
   }
 
   depends_on = [

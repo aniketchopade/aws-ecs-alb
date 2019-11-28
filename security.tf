@@ -35,12 +35,13 @@ resource "aws_security_group" "sample_application_sg" {
     from_port = 22
     to_port   = 22
     cidr_blocks = ["0.0.0.0/0"]
+    
   }
 
   ingress {
     protocol  = "tcp"
-    from_port = 3333
-    to_port   = 3333
+    from_port = 8443
+    to_port   = 8443
 
     security_groups = [
       "${aws_security_group.sample_alb_sg.id}",

@@ -1,8 +1,16 @@
-var net = require('net');
+'use strict';
 
-var server = net.createServer(function(socket) {
-	socket.write('Echo server\r\n');
-	socket.pipe(socket);
+const express = require('express');
+
+// Constants
+const PORT = 8443;
+const HOST = '0.0.0.0';
+
+// App
+const app = express();
+app.get('/', (req, res) => {
+  res.send('Sample rateshop app\n');
 });
 
-server.listen(8443, '127.0.0.1');
+app.listen(PORT, HOST);
+console.log(`Running on http://${HOST}:${PORT}`);
