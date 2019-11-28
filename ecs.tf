@@ -7,7 +7,7 @@ resource "aws_ecs_cluster" "main" {
 data "template_file" "task_definition" {
   template = "${file("${path.module}/task-definition.json")}"
 
-  vars {
+  vars = {
     image_url        = "${var.image_url}"
     container_name   = "sample-dc"
     log_group_region = "${var.aws_region}"

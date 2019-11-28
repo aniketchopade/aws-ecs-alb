@@ -3,7 +3,7 @@
 data "template_file" "task_definition_amadeus" {
   template = "${file("${path.module}/task-definition.amadeus.json")}"
 
-  vars {
+  vars = {
     image_url        = "${var.image_url}"
     container_name   = "sample-amadeus"
     log_group_region = "${var.aws_region}"
