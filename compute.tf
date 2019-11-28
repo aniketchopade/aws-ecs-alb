@@ -3,9 +3,9 @@
 
 data "template_file" "userdata" {
    template = "${file("${path.module}/userdata.tpl")}"
-   vars {
+#   vars {
      ecs_cluster_name   = "${aws_ecs_cluster.main.name}"
-   }
+#   }
 }
 
 #Launches EC2 autoscale grooup for DC
