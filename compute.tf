@@ -19,9 +19,7 @@ resource "aws_autoscaling_group" "sample_app_dc" {
 }
 
 resource "aws_launch_configuration" "sample_app_dc" {
-  security_groups = [
-    ["${var.security_group_2}", "${var.security_group_1}"]
-  ]
+  security_groups = ["${var.security_group_2}" , "${var.security_group_1}"]
 
   key_name                    = "${var.key_name}"
   image_id                    = "${var.ami}"
