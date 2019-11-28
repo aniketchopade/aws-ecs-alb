@@ -5,8 +5,8 @@ vpc_id          = "vpc-09646561"
 access_key = "AKIAUWQS3XBQPD5T3Z4O"
 secret_key = "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"
 
-security_group_1 = "sg-0e18043027cf1e7cc"
-security_group_2 = "sg-0e18043027cf1e7cc"
+security_group_1 = "sg-0b88af1298b2e536a"
+security_group_2 = "sg-0b88af1298b2e536a"
 
 image_url = "aniketchopade/location-service"
 asg_min   = 1
